@@ -1,7 +1,210 @@
 services:
-  # Your other services.
-
-  gotenberg:
+  gotenberg_0:
     image: gotenberg/gotenberg:8
     ports:
       - "3000:3000"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_1:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_2:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3002:3002"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_3:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3003:3003"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_4:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3004:3004"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_5:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3005:3005"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_6:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3006:3006"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_7:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3007:3007"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_8:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3008:3008"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
+
+  gotenberg_9:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "3009:3009"
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+    command:
+      - "gotenberg"
+      - "--webhook-disable"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 300M
+        reservations:
+          cpus: '0.25'
+          memory: 150M
+      mode: replicated
+      replicas: 1
