@@ -28,6 +28,7 @@ services:
       - "gotenberg"
       - "--webhook-disable"
       - "--api-timeout=60s"
+      - "--libreoffice-max-queue-size=1"
     deploy:
       resources:
         limits:
