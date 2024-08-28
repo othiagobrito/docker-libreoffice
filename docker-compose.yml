@@ -8,6 +8,14 @@ services:
       - gotenberg
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '1.50'
+          memory: 1G
+        reservations:
+          cpus: '0.75'
+          memory: 500M
 
   gotenberg:
     image: gotenberg/gotenberg:8
